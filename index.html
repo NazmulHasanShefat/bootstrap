@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./main.css">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- fontawsome cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid" style="padding:0 90px;">
+        <a class="navbar-brand text-white" href="#">Navbar</a>
+        <div class="d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions">
+          <i class="fa-solid fa-bars p-1" style="cursor: pointer;"></i>
+        </div>
+        <!-- nav body -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+          aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body flex-row flex-wrap">
+            <div class="left_items col-lg-5 col-md-12 gap-4">
+              <ul class="navbar-nav bd-navbar-nav flex-row flex-wrap">
+                <li class="nav-item col-6 col-md-4 col-lg-auto">
+                  <a class="nav-link active text-white" aria-current="page" href="#">Docs</a>
+                </li>
+                <li class="nav-item col-6 col-md-4 col-lg-auto">
+                  <a class="nav-link text-white" href="#">Examples</a>
+                </li>
+                <li class="nav-item col-6 col-md-4 col-lg-auto">
+                  <a class="nav-link text-white" href="#">Icons</a>
+                </li>
+                <li class="nav-item col-6 col-md-4 col-lg-auto">
+                  <a class="nav-link text-white" href="#">Themes</a>
+                </li>
+                <li class="nav-item col-6 col-md-4 col-lg-auto">
+                  <a class="nav-link text-white" href="#">Bolg</a>
+                </li>
+
+              </ul>
+            </div>
+            <!-- search input -->
+            <div class="center_items col-lg-3 col-md-12 gap-4 d-none d-lg-flex justify-content-start">
+              <div class="dumi_input">
+                <div class="serch_icon d-flex align-items-center">
+                  <div class="s_icon_main d-flex align-items-center">
+                    <i class="fa-solid fa-magnifying-glass px-2 text-white"></i>
+                    <p class="mb-0 text-white">Search</p>
+                  </div>
+                </div>
+                <div class="search_kye_shortcut">
+                  <div class="shortcut_name d-flex justify-content-center align-items-center text-white">Ctrl k</div>
+                </div>
+              </div>
+            </div>
+            <!-- end-->
+            <div class="right_items col-lg-4 col-md-12 gap-4 d-flex justify-content-center">
+              <div class="nav_icons_container d-flex justify-content-center gap-3 align-items-center"
+                style="width: 100%;">
+                <div class="nav_icon"><i class="fa-brands fa-github text-white"></i></div>
+                <div class="nav_icon"><i class="fa-brands fa-square-gitlab text-white"></i></div>
+                <div class="nav_icon"><i class="fa-brands fa-twitter text-white"></i></div>
+                <span class="text-white">|</span>
+                <div class="nav_icon">
+                  <!-- drop dwun  -->
+                  <div class="dropdown">
+                    <div class="dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false"
+                      style="cursor: pointer;">
+                      v 5.3
+                    </div>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-header" href="#">v5 releases</a></li>
+                      <li><a class="dropdown-item active" href="#">Latest (5.3.x)</a></li>
+                      <li><a class="dropdown-item" href="#">v5.2.3</a></li>
+                      <li><a class="dropdown-item" href="#">v5.1.3</a></li>
+                      <li><a class="dropdown-item" href="#">v5.1.2</a></li>
+                      <li><a class="dropdown-header" href="#">v5 releases</a></li>
+                      <li><a class="dropdown-item" href="#">v5.1.2</a></li>
+                      <li><a class="dropdown-item" href="#">v5.1.2</a></li>
+                      <li><a class="dropdown-item" href="#">v5.1.2</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <span class="text-white">|</span>
+                <div class="nav_icon">
+                  <div class="dropdown">
+                    <button class="btn btn-link nav-link dropdown-toggle text-white" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <i class="fa-solid fa-moon text-white"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                      <li class="th_1"><a class="dropdown-item d-flex justify-content-start" href="#"><i><i
+                              class="fa-solid fa-moon mb-0 px-3"></i></i>
+                          <p class="mb-0">dark</p>
+                        </a></li>
+                      <li class="th_2"><a class="dropdown-item d-flex justify-content-start" data-bs-theme-value="dark"
+                          href="#"><i><i class="fa-solid fa-moon mb-0 px-3"></i></i>
+                          <p class="mb-0">dark</p>
+                        </a></li>
+                      <li class="th_3"><a class="dropdown-item d-flex justify-content-start" data-bs-theme-value="light"
+                          href="#"><i><i class="fa-solid fa-sun mb-0 px-3" aria-pressed="false"></i></i>
+                          <p class="mb-0">light</p>
+                        </a></li>
+
+                    </ul>
+                  </div>
+                </div> <!--ICON-->
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end nav body -->
+      </div>
+    </nav>
+  </header>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

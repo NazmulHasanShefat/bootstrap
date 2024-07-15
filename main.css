@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #6e2cf2;
+}
+
+.dumi_input {
+  height: 38px;
+  width: 90%;
+  border: 2px solid white;
+  background-color: #6227d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dumi_input:hover {
+  border: 2px solid burlywood;
+}
+
+.shortcut_name {
+  height: 30px;
+  width: 40px;
+  background-color: #4a1da3;
+  border-radius: 5px;
+  font-size: 0.7rem;
+}
+
+#nav_select {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.nav_option {
+  background-color: black;
+}
+
+.dropdown-item:hover {
+  background-color: #6227d9;
+}
+
+.active_d {
+  background-color: #6227d9;
+}
+
+.dropdown-menu-end {
+  --bs-dropdown-min-width: 5rem;
+}/*# sourceMappingURL=main.css.map */
