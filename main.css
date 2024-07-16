@@ -4,6 +4,26 @@
   box-sizing: border-box;
 }
 
+@media screen and (min-width: 800px) {
+  .left_ofcanvas {
+    width: 250px;
+    height: 92vh;
+    overflow-y: scroll;
+  }
+  .left_min_body {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: end;
+  }
+  .offcanv_lg_list {
+    width: 60%;
+    height: max-content;
+  }
+  .ml_li {
+    margin-left: -30px;
+  }
+}
 header {
   background-color: #6e2cf2;
 }
@@ -157,4 +177,7 @@ header {
   .suggestion_heading {
     width: 90%;
   }
+}
+.nav-link:hover {
+  background-color: #6e2cf2;
 }/*# sourceMappingURL=main.css.map */
