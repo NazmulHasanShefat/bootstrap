@@ -24,11 +24,13 @@ header {
 }
 
 .shortcut_name {
-  height: 30px;
-  width: 40px;
+  height: 24px;
+  width: 35px;
   background-color: #4a1da3;
   border-radius: 5px;
   font-size: 0.7rem;
+  padding: 3px;
+  margin-right: 6px;
 }
 
 #nav_select {
@@ -51,4 +53,88 @@ header {
 
 .dropdown-menu-end {
   --bs-dropdown-min-width: 5rem;
+}
+
+.search_box_back_shadow {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.651);
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.search_input_box {
+  position: absolute;
+  height: 50px;
+  width: 40%;
+  border: 2px solid #6e2cf2;
+  top: 130px;
+  left: 30%;
+  display: none;
+}
+
+.suggestion_container {
+  width: 100%;
+  height: max-content;
+  margin-top: 160px;
+  position: relative;
+  display: none;
+}
+
+.suggestion_heading {
+  height: max-content;
+  width: 40%;
+  margin: auto;
+  color: #6e2cf2;
+}
+
+.search_suggestion {
+  height: 50px;
+  width: 40%;
+  margin: 15px auto;
+  border: 2px solid #6e2cf2;
+  cursor: pointer;
+}
+
+.suggestion_subtext {
+  font-size: 0.7rem;
+  color: #c2c2c2;
+}
+
+.search_suggestion:hover {
+  background-color: #6e2cf2;
+  color: #fff;
+}
+
+.search_suggestion:focus {
+  background-color: #6e2cf2;
+  color: #fff;
+}
+
+#input_search {
+  height: 100%;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+}
+
+.active_search {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .search_suggestion {
+    height: 50px;
+    width: 90%;
+  }
+  .search_input_box {
+    left: 5%;
+    width: 90%;
+  }
+  .suggestion_heading {
+    width: 90%;
+  }
 }/*# sourceMappingURL=main.css.map */
