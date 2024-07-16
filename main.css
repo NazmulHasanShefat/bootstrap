@@ -28,7 +28,7 @@ header {
 }
 
 .dumi_input:hover {
-  border: 2px solid burlywood;
+  border: 3px solid burlywood;
 }
 
 .shortcut_name {
@@ -89,7 +89,7 @@ header {
   width: 100%;
   height: max-content;
   margin-top: 160px;
-  position: relative;
+  position: absolute;
   display: none;
 }
 
