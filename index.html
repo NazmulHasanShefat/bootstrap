@@ -1,36 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./main.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./main.css" />
   <title>Bootstrap demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <!-- fontawsome cdn  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./external_files/prism.css" />
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid my_fuild px-3 px-lg-5">
-        <a class="navbar-brand text-white" href="#"><i class="fa-solid fa-bars px-2 d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions2" aria-controls="offcanvasWithBothOptions2"></i><img src="./bootstrap.png" class="px-2 bootstrap_logo" alt="">bootstrap</a>
+        <a class="navbar-brand text-white" href="#"><i class="fa-solid fa-bars px-2 d-lg-none"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions2"
+            aria-controls="offcanvasWithBothOptions2"></i><img src="./bootstrap.png" class="px-2 bootstrap_logo"
+            alt="" />bootstrap</a>
         <div class="right-icon d-flex justify-content-center align-items-center gap-2 fs-4">
-          <i class="fa-solid fa-magnifying-glass fs-6 px-2 d-lg-none" id="mobile_search" style="cursor: pointer;"></i>
+          <i class="fa-solid fa-magnifying-glass fs-6 px-2 d-lg-none" id="mobile_search" style="cursor: pointer"></i>
           <div class="d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-          aria-controls="offcanvasWithBothOptions">
-          <img src="./more.png" class="mb-1" alt="" style="cursor: pointer;">
-        </div>
+            aria-controls="offcanvasWithBothOptions">
+            <img src="./more.png" class="mb-1" alt="" style="cursor: pointer" />
+          </div>
         </div>
         <!-- nav body -->
-        <div class="offcanvas offcanvas-end bg-primary" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-          aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas offcanvas-end bg-primary" data-bs-scroll="true" tabindex="-1"
+          id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+              Backdrop with scrolling
+            </h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body flex-row flex-wrap">
@@ -51,7 +57,6 @@
                 <li class="nav-item col-6 col-md-4 col-lg-auto">
                   <a class="nav-link text-white" href="#">Bolg</a>
                 </li>
-
               </ul>
             </div>
             <!-- search input -->
@@ -64,32 +69,47 @@
                   </div>
                 </div>
                 <div class="search_kye_shortcut">
-                  <div class="shortcut_name d-flex justify-content-center align-items-center text-white">Ctrl k</div>
+                  <div class="shortcut_name d-flex justify-content-center align-items-center text-white">
+                    Ctrl k
+                  </div>
                 </div>
               </div>
             </div>
             <!-- end-->
             <div class="right_items col-lg-4 col-md-12 gap-4 d-flex justify-content-center">
-              <div class="nav_icons_container d-flex justify-content-lg-start justify-content-evenly mt-5 mt-lg-0 justify-content-lg-center gap-3 align-items-center"
-                style="width: 100%;">
-                <div class="nav_icon"><i class="fa-brands fa-github text-white"></i></div>
-                <div class="nav_icon"><i class="fa-brands fa-square-gitlab text-white"></i></div>
-                <div class="nav_icon"><i class="fa-brands fa-twitter text-white"></i></div>
+              <div
+                class="nav_icons_container d-flex justify-content-lg-start justify-content-evenly mt-5 mt-lg-0 justify-content-lg-center gap-3 align-items-center"
+                style="width: 100%">
+                <div class="nav_icon">
+                  <i class="fa-brands fa-github text-white"></i>
+                </div>
+                <div class="nav_icon">
+                  <i class="fa-brands fa-square-gitlab text-white"></i>
+                </div>
+                <div class="nav_icon">
+                  <i class="fa-brands fa-twitter text-white"></i>
+                </div>
                 <span class="text-white">|</span>
                 <div class="nav_icon">
                   <!-- drop dwun  -->
                   <div class="dropdown">
                     <div class="dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false"
-                      style="cursor: pointer;">
+                      style="cursor: pointer">
                       v 5.3
                     </div>
                     <ul class="dropdown-menu dropdown-menu-end">
-                      <li><a class="dropdown-header" href="#">v5 releases</a></li>
-                      <li><a class="dropdown-item active" href="#">Latest (5.3.x)</a></li>
+                      <li>
+                        <a class="dropdown-header" href="#">v5 releases</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item active" href="#">Latest (5.3.x)</a>
+                      </li>
                       <li><a class="dropdown-item" href="#">v5.2.3</a></li>
                       <li><a class="dropdown-item" href="#">v5.1.3</a></li>
                       <li><a class="dropdown-item" href="#">v5.1.2</a></li>
-                      <li><a class="dropdown-header" href="#">v5 releases</a></li>
+                      <li>
+                        <a class="dropdown-header" href="#">v5 releases</a>
+                      </li>
                       <li><a class="dropdown-item" href="#">v5.1.2</a></li>
                       <li><a class="dropdown-item" href="#">v5.1.2</a></li>
                       <li><a class="dropdown-item" href="#">v5.1.2</a></li>
@@ -105,24 +125,28 @@
                       <i class="fa-solid fa-moon text-white"></i>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
-                      <li class="th_1"><a class="dropdown-item d-flex justify-content-start" href="#"><i><i
+                      <li class="th_1">
+                        <a class="dropdown-item d-flex justify-content-start" href="#"><i><i
                               class="fa-solid fa-moon mb-0 px-3"></i></i>
                           <p class="mb-0">dark</p>
-                        </a></li>
-                      <li class="th_2"><a class="dropdown-item d-flex justify-content-start" data-bs-theme-value="dark"
-                          href="#"><i><i class="fa-solid fa-moon mb-0 px-3"></i></i>
+                        </a>
+                      </li>
+                      <li class="th_2">
+                        <a class="dropdown-item d-flex justify-content-start" data-bs-theme-value="dark" href="#"><i><i
+                              class="fa-solid fa-moon mb-0 px-3"></i></i>
                           <p class="mb-0">dark</p>
-                        </a></li>
-                      <li class="th_3"><a class="dropdown-item d-flex justify-content-start" data-bs-theme-value="light"
-                          href="#"><i><i class="fa-solid fa-sun mb-0 px-3" aria-pressed="false"></i></i>
+                        </a>
+                      </li>
+                      <li class="th_3">
+                        <a class="dropdown-item d-flex justify-content-start" data-bs-theme-value="light" href="#"><i><i
+                              class="fa-solid fa-sun mb-0 px-3" aria-pressed="false"></i></i>
                           <p class="mb-0">light</p>
-                        </a></li>
-
+                        </a>
+                      </li>
                     </ul>
                   </div>
-                </div> <!--ICON-->
-
-
+                </div>
+                <!--ICON-->
               </div>
             </div>
           </div>
@@ -131,63 +155,72 @@
       </div>
     </nav>
   </header>
-  <main>
+  <section>
     <div class="left_nav">
       <!-- search box -->
-       <div class="search_box_back_shadow"></div>
-       <div class="search_input_box">
+      <div class="search_box_back_shadow"></div>
+      <div class="search_input_box">
         <i class="fa-solid fa-magnifying-glass search_glass"></i>
-         <input type="text" id="input_search" placeholder="Search docs" autofocus />
+        <input type="text" id="input_search" placeholder="Search docs" autofocus />
+      </div>
+      <!-- suggestion -->
+      <div class="suggestion_container">
+        <div class="suggestion_heading">
+          <h6>Recent</h6>
         </div>
-        <!-- suggestion -->
-        <div class="suggestion_container">
-           <div class="suggestion_heading"><h6>Recent</h6></div>
-           <div class="search_suggestion d-flex justify-content-between align-items-center px-2">
-            <div class="suggestion_content d-flex justify-content-center align-items-center gap-2">
-              <div class="recent_icon"><img src="./recent.png" alt=""></div>
-              <div class="suggestion_text lh-1">
-                <p class="mb-0">Bootstrap nav</p>
-                 <span class="suggestion_subtext">bootstrap full navigation</span>
-              </div>
+        <div class="search_suggestion d-flex justify-content-between align-items-center px-2">
+          <div class="suggestion_content d-flex justify-content-center align-items-center gap-2">
+            <div class="recent_icon"><img src="./recent.png" alt="" /></div>
+            <div class="suggestion_text lh-1">
+              <p class="mb-0">Bootstrap nav</p>
+              <span class="suggestion_subtext">bootstrap full navigation</span>
             </div>
-            <div class="suggestion_mark_delet d-flex justify-content-center gap-2">
-              <div class="suggestion_ster"><img src="./star.png" alt=""></div>
-              <div class="suggestion_delete"><img src="./close.png" alt=""></div>
+          </div>
+          <div class="suggestion_mark_delet d-flex justify-content-center gap-2">
+            <div class="suggestion_ster"><img src="./star.png" alt="" /></div>
+            <div class="suggestion_delete">
+              <img src="./close.png" alt="" />
             </div>
-           </div>  <!--suggestion search-->
-           <div class="search_suggestion d-flex justify-content-between align-items-center px-2">
-            <div class="suggestion_content d-flex justify-content-center align-items-center gap-2">
-              <div class="recent_icon"><img src="./recent.png" alt=""></div>
-              <div class="suggestion_text lh-1">
-                <p class="mb-0">Bootstrap nav</p>
-                 <span class="suggestion_subtext">bootstrap full navigation</span>
-              </div>
+          </div>
+        </div>
+        <!--suggestion search-->
+        <div class="search_suggestion d-flex justify-content-between align-items-center px-2">
+          <div class="suggestion_content d-flex justify-content-center align-items-center gap-2">
+            <div class="recent_icon"><img src="./recent.png" alt="" /></div>
+            <div class="suggestion_text lh-1">
+              <p class="mb-0">Bootstrap nav</p>
+              <span class="suggestion_subtext">bootstrap full navigation</span>
             </div>
-            <div class="suggestion_mark_delet d-flex justify-content-center gap-2">
-              <div class="suggestion_ster"><img src="./star.png" alt=""></div>
-              <div class="suggestion_delete"><img src="./close.png" alt=""></div>
+          </div>
+          <div class="suggestion_mark_delet d-flex justify-content-center gap-2">
+            <div class="suggestion_ster"><img src="./star.png" alt="" /></div>
+            <div class="suggestion_delete">
+              <img src="./close.png" alt="" />
             </div>
-           </div>  <!--suggestion search-->
-         
-          
-        </div> <!--suggestio container-->
+          </div>
+        </div>
+        <!--suggestion search-->
+      </div>
+      <!--suggestio container-->
       <!-- search box end -->
     </div>
 
-
     <div class="nav_2">
       <!-- start  -->
-      <div class="offcanvas-lg offcanvas-start left_ofcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions2" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-lg offcanvas-start left_ofcanvas" data-bs-scroll="true" tabindex="-1"
+        id="offcanvasWithBothOptions2" aria-labelledby="offcanvasWithBothOptionsLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+            Backdrop with scrolling
+          </h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-          data-bs-target="#offcanvasWithBothOptions2" aria-label="Close"></button>
+            data-bs-target="#offcanvasWithBothOptions2" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body left_min_body">
           <ul class="navbar-nav offcanv_lg_list lh-1">
             <li class="nav-item mt-4 ml_li">
               <small class="fs-6 d-flex justify-content-start" aria-current="page" href="#">
-                <img src="" alt="">
+                <img src="" alt="" />
                 <i class="fa-solid fa-image px-2"></i>
                 <p class="mb-1">Getting started</p>
               </small>
@@ -227,7 +260,7 @@
             </li>
             <li class="nav-item mt-4 ml_li">
               <small class="fs-6 d-flex justify-content-start" aria-current="page" href="#">
-                <img src="" alt="">
+                <img src="" alt="" />
                 <i class="fa-solid fa-image px-2"></i>
                 <p class="mb-1">Getting started</p>
               </small>
@@ -267,7 +300,7 @@
             </li>
             <li class="nav-item mt-4 ml_li">
               <small class="fs-6 d-flex justify-content-start" aria-current="page" href="#">
-                <img src="" alt="">
+                <img src="" alt="" />
                 <i class="fa-solid fa-image px-2"></i>
                 <p class="mb-1">Getting started</p>
               </small>
@@ -307,7 +340,7 @@
             </li>
             <li class="nav-item mt-4 ml_li">
               <small class="fs-6 d-flex justify-content-start" aria-current="page" href="#">
-                <img src="" alt="">
+                <img src="" alt="" />
                 <i class="fa-solid fa-image px-2"></i>
                 <p class="mb-1">Getting started</p>
               </small>
@@ -347,7 +380,7 @@
             </li>
             <li class="nav-item mt-4 ml_li">
               <small class="fs-6 d-flex justify-content-start" aria-current="page" href="#">
-                <img src="" alt="">
+                <img src="" alt="" />
                 <i class="fa-solid fa-image px-2"></i>
                 <p class="mb-1">Getting started</p>
               </small>
@@ -387,7 +420,7 @@
             </li>
             <li class="nav-item mt-4 ml_li">
               <small class="fs-6 d-flex justify-content-start" aria-current="page" href="#">
-                <img src="" alt="">
+                <img src="" alt="" />
                 <i class="fa-solid fa-image px-2"></i>
                 <p class="mb-1">Getting started</p>
               </small>
@@ -427,7 +460,7 @@
             </li>
             <li class="nav-item mt-4 ml_li">
               <small class="fs-6 d-flex justify-content-start" aria-current="page" href="#">
-                <img src="" alt="">
+                <img src="" alt="" />
                 <i class="fa-solid fa-image px-2"></i>
                 <p class="mb-1">Getting started</p>
               </small>
@@ -467,7 +500,7 @@
             </li>
             <li class="nav-item mt-4 ml_li">
               <small class="fs-6 d-flex justify-content-start" aria-current="page" href="#">
-                <img src="" alt="">
+                <img src="" alt="" />
                 <i class="fa-solid fa-image px-2"></i>
                 <p class="mb-1">Getting started</p>
               </small>
@@ -507,7 +540,7 @@
             </li>
             <li class="nav-item mt-4 ml_li">
               <small class="fs-6 d-flex justify-content-start" aria-current="page" href="#">
-                <img src="" alt="">
+                <img src="" alt="" />
                 <i class="fa-solid fa-image px-2"></i>
                 <p class="mb-1">Getting started</p>
               </small>
@@ -547,7 +580,7 @@
             </li>
             <li class="nav-item mt-4 ml_li">
               <small class="fs-6 d-flex justify-content-start" aria-current="page" href="#">
-                <img src="" alt="">
+                <img src="" alt="" />
                 <i class="fa-solid fa-image px-2"></i>
                 <p class="mb-1">Getting started</p>
               </small>
@@ -585,18 +618,142 @@
             <li class="nav-item">
               <a class="nav-link rounded d-inline-block py-1 px-2 fs-6" aria-current="page" href="#">Cotribile</a>
             </li>
-          
           </ul>
         </div>
       </div>
       <!-- end -->
+      <!-- main content -->
+      <div class="main_content_conteiner">
+        <div class="wrap_main_content px-3 pt-3">
+          <div class="intro_heading" style="width: 100%; height: max-content">
+            <div class="intro_heading_container d-flex justify-content-between align-items-center">
+              <h1>Get started with Bootstrap</h1>
+              <button type="button" class="btn btn-outline-secondary" style="font-size: 0.8rem">
+                View on Github
+              </button>
+            </div>
+            <h3 class="fw-light">
+              Bootstrap is a powerful, feature-packed frontend toolkit. Build
+              anything—from prototype to production—in minutes.
+            </h3>
+          </div>
+          <!-- card -->
+          <div class="card mb-3 mt-5 mt-lg-5" style="max-width: 340px; min-height: 100">
+            <div class="row g-0">
+              <div class="col-5 d-flex py-4 px-3 justify-content-center">
+                <img src="./ads_pic.jpg" class="img-fluid rounded-start" alt="..." />
+              </div>
+              <div class="col-7">
+                <div class="card-body">
+                  <p class="card-text mb-0" style="font-size: 0.7rem">
+                    This is a wider card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary">ads via Carbon</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end card -->
+          <div class="quick_start_content">
+            <div class="quick_start_heading">
+              <h1>Quick start</h1>
+            </div>
+            <div class="quick_start_titel">
+              <h3 class="fw-light fs-6">
+                Get started by including Bootstrap’s production-ready CSS and
+                JavaScript via CDN without the need for any build steps. See
+                it in practice with this
+                <a href="#">Bootstrap CodePen demo.</a>
+              </h3>
+            </div>
+            <!-- instraction -->
+            <!-- instraction 1 -->
+            <div class="instraction-1">
+              <div class="intraction_1_titel">
+                <ol>
+                  <li>
+                    Create a new index.html file in your project root. Include
+                    the<code>&lt;meta&gt;name="viewport"&lt;meta&gt;</code>
+                    tag as well for
+                    <a href="">proper responsive behavior </a> in mobile
+                    devices.
+                  </li>
+                </ol>
+                <div class="code_box ml-5" style="height: max-content">
+                  <pre class="p-0">
+            <code class="language-HTML">
+    &lt;doctype html&gt;
+    &lt;html lang="en"&gt;
+     &lt;head&gt;
+     &lt;meta charset="utf-8"&gt;
+     &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+     &lt;title&gt;Bootstrap demo&lt;/title&gt;
+     &lt;/head&gt;
+      &lt;body&gt;
+       &lt;h1&gt;hello World&lt;/h1&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+            </code>
+           </pre>
+                </div>
+              </div>
+            </div>
+           
+            <!-- start intro  -->
+            <div class="instraction-2 mt-5">
+              <div class="intraction_1_titel">
+                <ol start="2">
+                  <li>
+                    Create a new index.html file in your project root. Include
+                    the<code>&lt;meta&gt;name="viewport"&lt;meta&gt;</code>
+                    tag as well for
+                    <a href="">proper responsive behavior </a> in mobile
+                    devices.
+                  </li>
+                </ol>
+                <div class="code_box ml-5" style="height: max-content;">
+                  <pre class="p-0">
+            <code class="language-HTML">
+    &lt;doctype html&gt;
+    &lt;html lang="en"&gt;
+     &lt;head&gt;
+     &lt;meta charset="utf-8"&gt;
+     &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+     &lt;title&gt;Bootstrap demo&lt;/title&gt;
+     &lt;/head&gt;
+      &lt;body&gt;
+       &lt;h1&gt;hello World&lt;/h1&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+            </code>
+           </pre>
+                </div>
+              </div>
+            </div>
+            <!-- END intro list  -->
+
+
+
+            
+          </div>
+        </div>
+        <!--wraping-->
+      </div>
+      <!-- end main content -->
     </div>
-  </main>
+  </section>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
   <script src="./script.js"></script>
+
+  <script src="./external_files/prism.js"></script>
 </body>
 
 </html>

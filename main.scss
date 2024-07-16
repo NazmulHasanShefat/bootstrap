@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 @media screen and (min-width:800px) {
+
     .left_ofcanvas{
         width: 250px;
         height: 92vh;
@@ -79,6 +80,7 @@ header{
     top:0;
     left:0;
     display: none;
+    z-index: 2;
 }
 .search_input_box{
     position: absolute;
@@ -159,4 +161,43 @@ header{
 // left nav 
 .nav-link:hover{
    background-color: #6e2cf2;
+}
+// main content
+.nav_2{
+    position: relative;
+    z-index: 3;
+}
+.main_content_conteiner{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left: 0;
+    overflow-y: scroll;
+    z-index: -1;
+}
+.main_content_conteiner::-webkit-scrollbar{
+    width: 0;
+}
+.wrap_main_content{
+    position: relative;
+    width: 70%;
+    height: 80vh;
+    left: 20%;
+}
+@media screen and (max-width:1180px) {
+    .wrap_main_content{
+        position: relative;
+        width: 70%;
+        height: 80vh;
+        left: 28%;
+    }
+}
+@media screen and (max-width:986px) {
+    .wrap_main_content{
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        left: 0;
+    }
 }
