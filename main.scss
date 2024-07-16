@@ -6,6 +6,12 @@
 header{
     background-color: #6e2cf2;
 }
+.bootstrap_logo{
+    transition: .3s ease-in-out;
+}
+.bootstrap_logo:hover{
+    transform: scale(110%) rotate(-10deg);
+}
 .dumi_input{
     height: 38px;
     width: 90%;
@@ -62,6 +68,8 @@ header{
     top:130px;
     left:30%;
     display: none;
+    justify-content: end;
+    align-items: center;
 }
 .suggestion_container{
     width: 100%;
@@ -96,15 +104,23 @@ header{
     background-color: #6e2cf2;
     color:#fff;
 }
+.search_glass{
+    font-size: 1.3rem;
+    color: #6e2cf2;
+    padding-left: 20px;
+}
 #input_search{
     height: 100%;
-    width: 100%;
+    width: 95%;
     padding:10px 20px;
     border:none;
     outline:none;
 }
 .active_search{
     display: block;
+}
+.active_search_m{
+    display: flex;
 }
 @media screen and (max-width:768px) {
     .search_suggestion{

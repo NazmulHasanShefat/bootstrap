@@ -18,10 +18,13 @@
   <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid my_fuild px-5">
-        <a class="navbar-brand text-white" href="#">Navbar</a>
-        <div class="d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+        <a class="navbar-brand text-white" href="#"><img src="./bootstrap.png" class="px-2 bootstrap_logo" alt="">bootstrap</a>
+        <div class="right-icon d-flex justify-content-center align-items-center gap-2">
+          <i class="fa-solid fa-magnifying-glass" id="mobile_search" style="cursor: pointer;"></i>
+          <div class="d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
           aria-controls="offcanvasWithBothOptions">
           <i class="fa-solid fa-bars p-1" style="cursor: pointer;"></i>
+        </div>
         </div>
         <!-- nav body -->
         <div class="offcanvas offcanvas-start bg-primary" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
@@ -133,7 +136,8 @@
       <!-- search box -->
        <div class="search_box_back_shadow"></div>
        <div class="search_input_box">
-         <input type="text" id="input_search" autofocus />
+        <i class="fa-solid fa-magnifying-glass search_glass"></i>
+         <input type="text" id="input_search" placeholder="Search docs" autofocus />
         </div>
         <!-- suggestion -->
         <div class="suggestion_container">
