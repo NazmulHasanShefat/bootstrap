@@ -31,6 +31,9 @@ search_box_back_shadow.addEventListener("click",()=>{
 })
 mobile_search.addEventListener("click",()=>{
    search_box_back_shadow.classList.toggle("active_search");
+   search_box_back_shadow.style.zIndex = "999";
    search_input_box.classList.toggle("active_search_m");
+   search_input_box.style.zIndex = "999";
    suggestion_container.classList.toggle("active_search");
+   suggestion_container.style.zIndex = "999";
 })
