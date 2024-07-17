@@ -224,7 +224,7 @@ header {
 }
 @media screen and (max-width: 986px) {
   .main_content_conteiner {
-    position: static;
+    position: relative;
   }
   .wrap_main_content {
     position: static;
@@ -288,5 +288,9 @@ footer {
   }
   footer {
     margin-top: 0;
+  }
+  .cdn_links_table {
+    width: 100%;
+    overflow-x: scroll;
   }
 }/*# sourceMappingURL=main.css.map */

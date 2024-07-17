@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 @media screen and (min-width:800px) {
-
     .left_ofcanvas{
         width: 250px;
         height: 92vh;
@@ -258,5 +257,9 @@ footer{
     }
     footer{
         margin-top: 0;
+    }
+    .cdn_links_table{
+        width: 100%;
+        overflow-x: scroll;
     }
 }
